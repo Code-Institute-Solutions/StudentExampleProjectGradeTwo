@@ -1,6 +1,5 @@
 body {
     background-color: #fdfdfd;
-    font-family: 'Nobile', sans-serif;
 }
 
 /*----------NAVBAR---------*/
@@ -15,13 +14,11 @@ body {
 .navbar .navbar-collapse {
     text-align: right;
     border-top: 1px solid transparent;
+    overflow-x: hidden;
 }
 
 .navbar-nav li a {
-    padding-top: 20px;
-    padding-bottom: 15px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 20px 25px 15px 25px;
     color: transparent;
 }
 
@@ -40,7 +37,7 @@ body {
 a {
     background-color: #E4E4E4;
     color: #888888;
-    font-size: 18px;
+    font-size: 1.12em;
     padding-left: 10px;
     padding-right: 10px;
     transition: all .3s ease-in-out;
@@ -96,27 +93,29 @@ a {
 
 /*----------JUMBOTRON----------*/
 
-.main {
+.landing-view-section {
     background-attachment: fixed;
-    background-image: url('./images/jumbo2.jpg');
+    background-image: url('images/landing.jpg');
     background-position: bottom;
     background-size: cover;
     height: 100vh;
     width: 100vw;
-
+    margin-bottom: 0px;
+    z-index: 1;
 }
 
 .top {
     padding-left: 12px;
+    text-align: center;
 }
 
-.name {
+h1 {
     padding-top: 5%;
-    font-size: 8rem;
+    font-size: 8.5em;
 }
 
-.title {
-    font-size: 3rem;
+.jumbotron p {
+    font-size: 3em;
 }
 
 /*------------ABOUT----------*/
@@ -125,7 +124,6 @@ a {
     padding-bottom: 10%;
     font-size: 1.75em;
     line-height: 2;
-    height: 100vh;
 }
 
 h2 {
@@ -135,14 +133,14 @@ h2 {
 }
 
 #about-p {
-    font-size: 1.75rem;
+    font-size: .8em;
 }
 
 /*------------WORK----------*/
 
-.work {
+.work-section {
     background-attachment: fixed;
-    background-image: url('./images/desk2.jpg');
+    background-image: url('images/desk.jpg');
     background-position: center;
     background-size: cover;
     width: 100vw;
@@ -150,6 +148,7 @@ h2 {
     background-repeat: no-repeat;
     position: relative;
     font-weight: 300;
+    margin-bottom: 0px;
 }
 
 .project-cards {
@@ -157,12 +156,6 @@ h2 {
     justify-content: center;
     align-items: center;
 
-}
-
-@media (max-width: 768px) and (min-width: 375px) {
-    #work {
-        width: 80%;
-    }
 }
 
 .col-xs-6 {
@@ -187,10 +180,6 @@ h2 {
     -webkit-transition: all .3s ease-in;
 }
 
-.card:hover {
-    opacity: 1;
-}
-
 .card-title {
     font-size: 1.25em;
     font-weight: bold;
@@ -202,7 +191,7 @@ h2 {
 }
 
 #card-text {
-    font-size: 1.5rem;
+    font-size: 1.07em;
 }
 
 #desktop-icon {
@@ -230,8 +219,9 @@ h2 {
 /*--------SKILLS-----------*/
 
 .skills {
+    position: relative;
+    top: 12%;
     padding-bottom: 96px;
-
 }
 
 @media (min-width: 768px) {
@@ -294,7 +284,7 @@ h2 {
     width: 120px;
     height: 120px;
     border-radius: 150px;
-    background: #C3C3C3;
+    background: #d3d3d3;
     overflow: hidden;
     left: 0px;
     top: 50px;
@@ -304,7 +294,7 @@ h2 {
 .arc-overlay {
     width: 110px;
     height: 110px;
-    background-color: #fdfdfd;
+    background-color: #fafafa;
     padding-left: 20px;
     padding-top: 6px;
     box-sizing: border-box;
@@ -349,14 +339,20 @@ h2 {
 
 /*-------CONTACT-----------*/
 
-.contact {
+.contact-section {
     background-attachment: fixed;
-    background-image: url('./images/computer.jpg');
+    background-image: url('images/computer.jpg');
     background-position: left;
     background-size: cover;
     padding-bottom: 100px;
     padding-top: 42px;
     text-align: left;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    position: relative;
+    top: 6%;
 }
 
 #contact-head {
@@ -411,7 +407,37 @@ i {
 
 }
 
-i:hover {
-    color: #564F6F;
+/*-----------MEDIA QUERIES----------*/
 
+@media (max-width: 768px) and (min-width: 375px) {
+    #work {
+        width: 80%;
+    }
+    .fa-chevron-down {
+        margin-top: 52vh;
+    }
+}
+
+@media (max-width: 992px) {
+    .landing-view-section,
+    .work-section,
+    .contact-section {
+        background-attachment: scroll;
+    }
+}
+
+@media (min-width: 992px) {
+    .about-me-section {
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+    }
+    .skills-section {
+        background-position: center;
+        background-size: cover;
+        width: 100vw;
+    }
+    .fa-chevron-down {
+        margin-top: 40vh;
+    }
 }
