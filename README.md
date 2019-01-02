@@ -5,7 +5,7 @@ This is my portfolio website to present to prospective employers.
 
 
 ## Demo
-A live demo can be found [here](https://code-institute-solutions.github.io/StudentExampleProjectGradeThree).
+A live demo can be found [here](https://code-institute-solutions.github.io/StudentExampleProjectGradeTwo).
 
 
 ## Technologies
@@ -15,7 +15,7 @@ A live demo can be found [here](https://code-institute-solutions.github.io/Stude
 
 
 ## Features
-This site uses Bootstrap and is responsive. 
+This site uses Bootstrap and was tested for responsiveness. 
 
 
 ## Deployment 
@@ -24,7 +24,7 @@ This site is on GitHub pages.
 ## Credits
 
 ### Content
-All content in the "About Me/À Propos" and "Work/Travail" sections in this portfolio site were written by me. 
+All content in the "About Me" and "Work" sections in this portfolio site were written by me. 
 
 ### Media 
 All photos were taken from [Pexels](https://www.pexels.com/).

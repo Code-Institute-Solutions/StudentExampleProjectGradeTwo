@@ -2,7 +2,9 @@ body {
     background-color: #000000;
 }
 
-/*----------NAVBAR---------*/
+footer {
+    border-color: transparent;
+}
 
 /* .navbar {
     background: none;
@@ -40,8 +42,6 @@ a {
     float: right!important;
 }
 
-/*----------JUMBOTRON----------*/
-
 .landing-view-section {
     /* background-attachment: fixed; */
     background-image: url('landing.jpg');
@@ -68,8 +68,6 @@ h1 {
     font-size: 3em;
 }
 
-/*------------ABOUT----------*/
-
 .about-row {
     padding-bottom: 10%;
     font-size: 1.75em;
@@ -87,7 +85,6 @@ h1 {
     font-size: .8em;
 }
 
-/*------------WORK----------*/
 
 .work-section {
     background-image: url('desk.jpg');
@@ -108,6 +105,11 @@ h1 {
 
 }
 
+@media (min-width: 768px) {
+    .skills-inner {
+        width: 738px;
+    }
+}
 .col-xs-6 {
     align-items: center;
 }
@@ -160,8 +162,6 @@ h1 {
     font-size: 25px;
 }
 
-/*--------SKILLS-----------*/
-
 .skills {
     position: relative;
     top: 12%;
@@ -169,11 +169,7 @@ h1 {
     color: pink;
 }
 
-@media (min-width: 768px) {
-    .skills-inner {
-        width: 738px;
-    }
-}
+
 
 .skill-circle {
     display: inline-table;
@@ -257,7 +253,7 @@ h1 {
     padding-left: 13px;
 } */
 
-/*-------CONTACT-----------*/
+
 
 .contact-section {
     background-image: url('computer.jpg');
@@ -268,11 +264,8 @@ h1 {
     margin-bottom: 30px;
 }
 
-/*-----------FOOTER----------*/
 
-footer {
-    border-color: transparent;
-}
+
 
 .foot {
     margin-bottom: 20px;
@@ -295,7 +288,6 @@ i {
     vertical-align: middle;
 }
 
-/*-----------MEDIA QUERIES----------*/
 
 @media (max-width: 768px) and (min-width: 375px) {
     #work {
