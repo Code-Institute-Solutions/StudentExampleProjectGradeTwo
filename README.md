@@ -17,6 +17,8 @@ A live demo can be found [here](https://code-institute-solutions.github.io/Stude
 ## Features
 This site uses Bootstrap and was tested for responsiveness. 
 
+## Testing
+I tested it on my computer, my tablet, and my phone. I also tested it in different browsers to make sure it worked.
 
 ## Deployment 
 The live site is deployed on GitHub pages. It uses the master branch.
